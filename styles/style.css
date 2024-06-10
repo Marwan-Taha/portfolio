@@ -441,8 +441,11 @@ footer img {
 
   .edu-item {
     width: 90%;
-    /* min-width: 350px; */
     max-width: 500px;
+  }
+
+  .edu-description {
+    top: 340px;
   }
 
   .education img {
