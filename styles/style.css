@@ -445,7 +445,8 @@ footer img {
   }
 
   .edu-description {
-    top: 330px;
+    top: 300px;
+    height: 50%;
   }
 
   .education img {
