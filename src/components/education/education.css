@@ -1,0 +1,117 @@
+.education-section {
+  height: 100vh;
+}
+
+.education-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.education-grid-container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  height: 500px;
+}
+
+.education-grid-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  z-index: 1;
+  background: rgb(0, 28, 2);
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.493) 50%,
+    rgba(23, 23, 23, 0.752) 100%
+  );
+}
+
+.education-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
+}
+
+.institute-img {
+  overflow: hidden;
+  position: relative;
+}
+.ITMO-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/images/itmo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Set the desired opacity for the background image */
+  z-index: 0; /* Ensure it's behind the content */
+}
+
+.CUFE-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/images/cairo-uni.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Set the desired opacity for the background image */
+  z-index: 0; /* Ensure it's behind the content */
+}
+
+.FU-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/images/futures.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Set the desired opacity for the background image */
+  z-index: 0; /* Ensure it's behind the content */
+}
+
+.learning-container,
+.institute-name-container {
+  position: relative; /* Ensure content inside is above the background image */
+  z-index: 1; /* Ensure text is visible above the background */
+}
+
+.learning-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.institute-link {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.institute-link:hover {
+    color: #a0a0a0;
+    font-size: 1.2rem;
+}

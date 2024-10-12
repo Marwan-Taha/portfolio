@@ -1,0 +1,109 @@
+.works {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 100px; */
+    
+}
+
+
+
+.progress {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    width: calc(100vw - 600px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 10;
+    
+}
+
+.title {
+    font-size: 3rem;
+    align-self: center;
+}
+
+.progress-bar {
+    
+    height: 10px;
+    background-color: white;
+    
+}
+
+.project-work {
+    height: calc(100vh - 300px);
+    width: 80%;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.project-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    gap: 30px;
+}
+
+
+.img-container {
+    flex: 1;
+    height: 80%;
+
+}
+
+.project-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    
+}
+
+
+.project-title {
+    font-size: 2.3rem;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    font-weight: 200;
+    opacity: 0.6;
+}
+
+.tech-stack-icons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.tech-stack-icons > * {
+    font-size: 2.4rem;
+}
+
+
+.btn {
+    background: none;
+    background-color: #e5e7eb;
+    padding: 10px;
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-top: 30px
+}

@@ -1,0 +1,93 @@
+.contact-section {
+    height: 100vh;
+    font-size: 2.5rem;
+  }
+  
+  .contact-section p {
+    font-size: 1.4rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    gap: 100px;
+    align-items: flex-start;
+  }
+  
+  .contact-intro-p {
+    font-size: 1.6rem;
+  }
+  
+  .contact-info-details > * {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+  }
+  
+  .contact-form-container {
+    width: 400px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
+    color: var(--text-primary-color);
+  }
+  
+  /* Targeting the input text within the TextField */
+  
+  .form-input.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    background-color: var(--text-primary-color);
+  }
+  
+  .form-input.MuiFormControl-root {
+    color: var(--primary-color); /* Change the input text color */
+    background-color: var(--secondary--color);
+    border-radius: 5px;
+  }
+  
+  /* Target the label text color */
+  .form-input .MuiInputLabel-root {
+    color: var(--primary-color); /* Change label color */
+    font-weight: 600;
+    color: #636b74;
+  }
+  
+  /* Optional: Changing the helper text color if used */
+  .form-input .MuiFormHelperText-root {
+    color: orange; /* Change helper text color */
+  }
+  
+  .form-input .MuiInputLabel-root.Mui-focused {
+    color: var(--primary-color);
+  }
+  
+  /* Button */
+  .custom-button:hover {
+    border-color: var(--secondary--color); /* Border color on hover */
+    color: var(--secondary--color); /* Text color on hover */
+  }
+  
+  .custom-button:active {
+    border-color: var(--text-primary-color); /* Border color when clicked */
+  }
+  
+  .custom-button .MuiTouchRipple-root {
+    color: var(--secondary--color); /* Ripple effect color */
+  }
+  
+  .custom-button.css-b4yaxo-MuiButtonBase-root-MuiButton-root {
+    border-color: var(--secondary--color); /* Default border color */
+    color: var(--secondary--color); /* Default text color */
+  }
+  

@@ -1,0 +1,106 @@
+.hero-section {
+    height: 100vh;
+    font-size: 3rem;
+    position: relative;
+  }
+  
+  .hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 5rem;
+  }
+  
+  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+    max-width: 675px;
+  }
+  
+  .nickname-container {
+    align-self: flex-start;
+  }
+  
+  .job-title {
+    font-size: 2rem;
+  }
+  .tech-icons-container {
+    display: flex; /* Align items in a row */
+    gap: 30px; /* Add space between the icons */
+    justify-content: flex-start; /* Align icons to the left */
+    align-items: center; /* Vertically center the icons */
+    white-space: nowrap; /* Prevent icons from wrapping to a new line */
+    margin-right: 30px;
+  }
+  
+  .tech-icon {
+    display: inline-block;
+    text-align: center; /* Center align icon and text */
+    margin: 0 20px; /* Adjust the margin to control spacing between icons */
+  }
+  
+  .tech-icon p {
+    margin-top: 10px; /* Space between the icon and label */
+    font-size: 14px; /* Adjust text size */
+    color: #333; /* Text color */
+  }
+  
+  @keyframes scroll-tech {
+    0% {
+      transform: translateX(0); /* Start at the left */
+    }
+    100% {
+      transform: translateX(-50%); /* Move to the left by 50% */
+    }
+  }
+  
+  .mouse-button {
+    width: 1.6rem;
+    height: 2.25rem;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid var(--secondary--color);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    left: 50%;
+    top: 90%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px var(--secondary--color);
+  }
+  
+  .mouse-button:hover {
+    transform: scale(1); /* Slightly enlarge on hover */
+    box-shadow: 0 3px 20px var(--secondary--color); /* Enhance shadow on hover */
+  }
+  
+  .mouse-button:active {
+    background-color: #a0a0a0;
+    transform: scale(0.95); /* Simulate button press */
+  }
+  
+  .scroll-wheel {
+    width: 2px;
+    height: 8px;
+    background-color: var(--secondary--color);
+    border-radius: 10px;
+    position: absolute;
+    top: 6px;
+    animation: scroll-wheel 1.2s infinite; /* Scroll wheel animation */
+  }
+  
+  @keyframes scroll-wheel {
+    0%,
+    100% {
+      top: 5px;
+    }
+    50% {
+      top: 10px;
+    }
+  }
