@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./sidebar.css"
 import logoImage from "../../assets/images/logo.png";
 import MenuIcon from '@mui/icons-material/Menu';
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
 
