@@ -155,12 +155,15 @@ a {
   }
 }
 
-/* Contact */
 
-/* About */
 
-/* Education */
+@media (max-width: 600px) {
+  html {
+    scroll-snap-type: none;
+  }
 
-/* Project Card */
+    .loading-container {
+      flex-direction: column;
+    }
 
-/* Project Section */
+}

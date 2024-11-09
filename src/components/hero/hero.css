@@ -104,3 +104,78 @@
       top: 10px;
     }
   }
+
+
+
+  @media (max-width: 1024px) {
+   
+    .hero {
+      line-height: 4rem;
+    }
+  
+  
+    .job-title {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content-container {
+      max-width: 450px;
+    }
+  
+    .hero {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  
+    .job-title {
+      font-size: 1.4rem;
+    }
+  
+    .mouse-button {
+      top: 85%;
+    }
+  
+    .tech-icons-container {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      font-size: 1.2rem;
+      line-height: 2.6rem;
+    }
+    
+    span.small {
+      font-size: 3rem;
+    }
+
+    .nickname-container {
+      align-self: center;
+    }
+  
+    .hero-content-container {
+      max-width: 80%;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .job-title {
+      font-size: 1.2rem;
+    }
+  
+    .mouse-button {
+      top: 80%;
+    }
+  
+    .tech-icon {
+      margin: 0 10px;
+    }
+  
+    .scroll-wheel {
+      width: 1px;
+      height: 6px;
+    }
+  }

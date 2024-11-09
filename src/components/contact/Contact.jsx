@@ -10,8 +10,6 @@ import Button from '@mui/material/Button';
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 
-
-
 const StyledTextarea = styled(TextareaAutosize)({
     resize: 'none',
     border: 'none', // remove the native textarea border

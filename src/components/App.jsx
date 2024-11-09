@@ -4,12 +4,11 @@ import Sidebar from "./sidebar/Sidebar";
 import LoadingScreen from "./LoadingScreen";
 import Contact from "./contact/Contact";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Projects from "./Projects/Projects";
 import About from "./about/About";
 import { motion } from "framer-motion";
-import Education from "./education/Education";
 import Services from "./services/Services";
 import Works from "./Works/Works";
+import Footer from "./footer/Footer"
 
 
 
@@ -70,10 +69,10 @@ export default function () {
                         <Routes>
                             <Route path="/" 
                             element={
-                                <div><Hero />  <Services /> <Works /> <About /></div>
+                                <div><Hero /> <About /> <Services /> <Works /> <Footer /></div>
                                 } 
                             />
-                            <Route path="/contact" element={<Contact />} />
+                            <Route path="/contact" element={<div><Contact /> <Footer /></div>} />
                         </Routes>
                     </BrowserRouter>
                 </motion.div>

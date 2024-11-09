@@ -1,50 +1,124 @@
 .about-section {
-    height: 100vh;
-    font-size: 1.3rem;
-  }
-  
-  
-  .about-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  height: 100vh;
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  height: 100vh 
+
+}
+
+.about-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-wrapper {
+  max-width: 1366px;
+  width: 90%; /* Increased width slightly to fill smaller screens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-content-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 2;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+}
+
+.about-p {
+  font-size: 1.3rem;
+  opacity: 0.7;
+  letter-spacing: 0.6px;
+  line-height: 1.8rem;
+}
+
+.about-img-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img-container img {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+/* Tablet view adjustments */
+@media (max-width: 1024px) {
   .about-wrapper {
-    max-width: 1366px;
-    width: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    gap: 50px;
-  }
-  
-  .about-content-container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
     gap: 30px;
   }
-  
-  .about-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
+
   .about-title {
-      font-size: 2.8rem;
+    font-size: 2rem;
   }
-  
-  .about-img-container {
-    display: flex;
+
+  .about-p {
+    font-size: 1.2rem;
+  }
+
+  .about-img-container img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content-container {
+    width: 100%;
     align-items: center;
   }
-  
-  .about-img-container iframe {
-    height: 400px;
-    width: 500px;
-    border: none;
+
+  .about-title {
+    font-size: 1.8rem;
   }
-  
+
+  .about-p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  .about-img-container img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.6rem;
+  }
+
+  .about-p {
+    font-size: 1rem;
+  }
+
+  .about-img-container img {
+    height: 200px;
+    width: 200px;
+  }
+}
