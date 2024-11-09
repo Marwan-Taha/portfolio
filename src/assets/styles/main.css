@@ -155,15 +155,8 @@ a {
   }
 }
 
-
-
 @media (max-width: 600px) {
-  html {
-    scroll-snap-type: none;
+  .loading-container {
+    flex-direction: column;
   }
-
-    .loading-container {
-      flex-direction: column;
-    }
-
 }
